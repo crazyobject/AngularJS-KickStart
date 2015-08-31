@@ -1,0 +1,18 @@
+<table ng-if="stockData" class="table table-bordered" ng-controller="stockCtrl">
+	<thead>
+		<tr>
+			<th>Name (Symbol)</th>
+			<th>Ask</th>
+			<th>Bid</th>
+			<th>Book Value</th>
+			<th>Change</th>
+		</tr>
+	</thead>
+	<tr ng-repeat="stock in stockData" ng-class="stock.Change<0 ? 'danger' : 'success'">
+		<td>{{stock.Name}}({{stock.symbol}})</td>
+		<td>{{stock.Ask}}</td>
+		<td>{{stock.Bid}}</td>
+		<td>{{stock.BookValue}}</td>
+		<td>{{stock.Change}}</td>
+	</tr>
+</table>

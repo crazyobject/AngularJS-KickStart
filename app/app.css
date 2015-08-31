@@ -1,0 +1,14 @@
+/* app css stylesheet */
+table td {
+padding: 10px;
+vertical-align: top;
+border: 1px solid;
+}
+body{
+padding-top:10px;
+font-size:13px;
+}
+.page-header h1{
+font:normal 52px 'Playball', cursive;
+text-shadow:1px 1px 1px rgba(0,0,0,0.1);
+}
